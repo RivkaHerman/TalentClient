@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import{HttpClientModule} from '@angular/common/http';
+import { UserComponent } from './components/user/user.component';
+import { UserViewerComponent } from './components/user-viewer/user-viewer.component';
+import { UsersDisplayComponent } from './components/users-display/users-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    UserComponent,
+    UserViewerComponent,
+    UsersDisplayComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [UsersDisplayComponent]
 })
 export class AppModule { }

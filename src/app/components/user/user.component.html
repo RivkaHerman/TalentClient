@@ -1,0 +1,8 @@
+<div class="a">
+    <div class="user" *ngFor="let u of allUsers"
+    [class.selected]="u === selectedUser"
+    (click)="selectUser(u)">
+        {{u.nameUser}}
+    </div>
+</div>
+

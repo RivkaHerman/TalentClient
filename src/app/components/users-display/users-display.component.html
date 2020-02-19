@@ -1,0 +1,19 @@
+<div class="mainContainer">    
+    <div class="buttons">
+        <button (click)="getUsers(0)">group 1</button>
+        <button (click)="getUsers(1)">group 2</button>
+        <button (click)="getUsers(2)">group 3</button>
+        <button (click)="getUsers(3)">group 4</button>
+    </div>
+           
+    <div class="container">
+        <div>
+            <app-user [allUsers]="allUsers" [selectedUser]="selectedUser" (userSelected)="onUserSelected($event)">
+            </app-user>
+        </div>
+
+        <div>
+            <app-user-viewer *ngIf="selectedUser" [user]="selectedUser"></app-user-viewer>
+        </div>
+    </div>
+</div>

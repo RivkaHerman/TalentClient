@@ -1,0 +1,21 @@
+.selected {
+    background-color: rgb(255, 47, 134);
+    border: 2px solid rgb(115, 255, 0);
+}
+.a{
+cursor: pointer;
+}
+
+button{
+cursor: pointer;
+}
+
+div{
+    width:200px;  
+    border: 2px solid black(115, 255, 0);
+}
+
+.user{
+    border: 1px solid black;
+    border-radius: 50px;
+}

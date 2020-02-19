@@ -1,0 +1,35 @@
+.mainContainer{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    border: 1px solid black; 
+    padding: 5px;
+    height: 100%;       
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid black; 
+}
+
+button{
+    padding:20px;
+    margin: 20px;
+    align-items: center;   
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 47, 134);
+}
+
+.buttons{
+    border: 1px solid black;     
+    align-content: center;
+}
+
+
+
+
